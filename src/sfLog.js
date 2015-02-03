@@ -11,13 +11,15 @@
   var sfLog = {
     init: init
   };
+  window.sfLog = sfLog;
+
   var callback = function(msg) {
     window.___log(msg);
   };
 
   function init(options) {
     // 查找jquery
-    if (window.$) {
+    if (!window.$) {
       console.error('sfLog需要jquery，没能找到$');
       return;
     }
@@ -26,7 +28,7 @@
     if (isFunc(options.callback)) {
       callback = options.callback;
     } else {
-      if (isFunc(window.___log)) {
+      if (!isFunc(window.___log)) {
         console.error('找不到___log方法，请使用自定义的callback');
         return;
       }
