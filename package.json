@@ -1,7 +1,7 @@
 {
   "name": "sf-log",
-  "version": "0.1.0",
-  "description": "元元素绑定___log",
+  "version": "0.1.1",
+  "description": "元素绑定___log",
   "main": "index.js",
   "scripts": {
     "unit-test": "mocha tests/*.js",
