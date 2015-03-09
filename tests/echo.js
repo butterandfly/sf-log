@@ -1,7 +1,7 @@
 var chai = require('chai');
 var should = chai.should();
 var expect = chai.expect;
-var sfEcho = require('../src/sfEcho.js');
+var sfEcho = require('../src/sf-echo.js');
 
 var forEach = function(list, callback) {
   for (var i = 0, len = list.length; i < len; i++) {

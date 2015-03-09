@@ -4,7 +4,8 @@
   "description": "元元素绑定___log",
   "main": "index.js",
   "scripts": {
-    "test": "mocha"
+    "unit-test": "mocha tests/*.js",
+    "e2e-test": "protractor tests/e2e/conf.js"
   },
   "repository": {
     "type": "git",
@@ -20,6 +21,8 @@
     "chai": "^1.10.0",
     "gulp": "^3.8.10",
     "gulp-concat": "^2.4.3",
-    "gulp-mocha": "^2.0.0"
+    "gulp-mocha": "^2.0.0",
+    "gulp-webpack": "^1.3.0",
+    "webpack": "^1.7.2"
   }
 }

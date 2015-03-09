@@ -3,7 +3,7 @@ describe('"sfLog" object', function() {
   global.dv = browser.driver;
 
   beforeEach(function() {
-    dv.get('http://localhost:8091/test/e2e/log.html');
+    dv.get('http://localhost:8079/tests/e2e/log.html');
   });
 
   it('should be found in global', function() {
